@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hockey club</title>
+    <!-- Tailwind and daisy link added -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- manrope google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind custom color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body class=".font-manrope ">
+    <header class="container mx-auto">
+      <!-- Nav bar -->
+
+      <!-- Banner section starts-->
+      <section class="">
+        <div class="carousel w-full h-[550px]">
+            <!-- slide1 -->
+          <div id="slide1" class="carousel-item relative w-full">
+            <img
+              src="/images/1.png"
+              class="w-full"
+            />
+            <div
+              class="absolute flex gap-2 left-1/2 lg:left-8 bottom-1/4 lg:bottom-5"
+            >
+              <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❮</a>
+              <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❯</a>
+            </div>
+          </div>
+          <!-- slide2 -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <img
+              src="/images/cup-prize.jpg"
+              class="w-full"
+            />
+            <div
+              class="absolute flex gap-2 left-1/2 lg:left-8 bottom-1/4 lg:bottom-5"
+            >
+              <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❮</a>
+              <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❯</a>
+            </div>
+          </div>
+          <!-- slide3 -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <img
+              src="/images/trophy3.jpg"
+              class="w-full"
+            />
+            <div
+              class="absolute flex gap-2 left-1/2 lg:left-8 bottom-1/4 lg:bottom-5"
+            >
+              <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❮</a>
+              <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❯</a>
+            </div>
+          </div>
+          <!-- slide4 -->
+          <div id="slide4" class="carousel-item relative w-full">
+            <img
+              src="/images/trophy4.jpg"
+              class="w-full"
+            />
+            <div
+              class="absolute flex gap-2 left-1/2 lg:left-8 bottom-1/4 lg:bottom-5"
+            >
+              <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❮</a>
+              <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❯</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- banner section end -->
+    </header>
+    <main class="container mx-auto"></main>
+    <footer></footer>
+  </body>
+</html>
